@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.section-1,
+.section-2,
+.last-section {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0 6.3em;
+}
+
+.section-1 {
+  position: relative;
+}
+
+.section-1 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0 1.7em 0;
+}
+
+nav #logo {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+nav #logo i {
+  display: inline-block;
+  transform: rotate(45deg);
+  font-size: 1.2em;
+}
+
+nav div,
+nav div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4em;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+nav button {
+  border: 3px solid black;
+  padding: 0.7em 1.3em;
+  border-radius: 0.7em;
+  font-weight: 600;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+nav button:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+
+}
+
+.main-sec-1 {
+  height: 100%;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3em;
+}
+
+.main-sec-1 h1 {
+  font-size: 3.2em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.main-sec-1 p {
+  font-size: 1.2em;
+  width: 90%;
+}
+
+.main-sec-1 a{
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 0;
+  background-color: black;
+  border-radius: 0.4em;
+  text-align: center;
+  font-size: 1.1em;
+  width: 44%;
+  border: 4px solid black;
+}
+
+.main-sec-1 a:hover{
+  background-color: white;
+  color: black;
+}
+
+.main-sec-2 {
+  height: 100%;
+  width: 55%;
+  position: relative;
+}
+.main-sec-2 img {
+  position: absolute;
+  right: 0;
+  height: 24em;
+  width: 30em;
+}
+
+.section-1-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5em;
+}
+
+.section-1-bottom img{
+  height: 90px;
+  width: 120px;
+  object-fit: contain;
+}
+
+/* * Section-2 */
+
+.section-2-subSec-1,
+.last-section-subSec-2 {
+  margin: 2em 0em 2.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.section-2-subSec-1 h2,
+.last-section-subSec-2 h2 {
+  background-color: #b9ff66;
+  padding: 3px 9px;
+  border-radius: 5px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.section-2-subSec-1 p,
+.last-section-subSec-2 p {
+  width: 44%;
+}
+
+.section-2-subSec-2 {
+  width: 100%;
+  height: 55%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5em;
+  margin-bottom: 7em;
+}
+
+.section-2-subSec-2 .card {
+  border: 3px solid black;
+  border-radius: 2em;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  box-shadow: 0px 10px 0px black;
+}
+
+.section-2-subSec-2 .card .card-sub-sec-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-2-subSec-2 .card .card-sub-sec-1 span {
+  font-size: 1.5em;
+  padding: 3px 9px;
+  border-radius: 7px;
+  line-height: 1.3;
+}
+
+.section-2-subSec-2 .card .card-sub-sec-1 a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.section-2-subSec-2 .card .card-sub-sec-1 a i {
+  display: inline-block;
+  font-size: 1.5em;
+  transform: rotate(10deg);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+#card-1 a, #card-4 a{
+  color: black;
+}
+
+#card-2 a, #card-3 a{
+  color: white;
+}
+
+#card-1 i, #card-4 i {
+background-color: black;
+  color: #b9ff66;
+}
+
+#card-2 i, #card-3 i {
+background-color: white;
+  color: black;
+}
+#card-1 span,
+#card-4 span {
+  background-color: #b9ff66;
+}
+
+#card-2 span,
+#card-3 span {
+  background-color: #fff;
+}
+
+#card-2,
+#card-3 {
+  background-color: #000;
+}
+
+/* * Section 3 */
+
+.last-section-subSec-1 {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 1.5em;
+  padding: 3em 3em;
+  display: flex;
+  margin-bottom: 5em;
+
+}
+
+.last-section-subSec-1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+}
+
+.last-section-subSec-1 h3{
+  font-size: 1.7em;
+}
+
+.last-section-subSec-1 p {
+  width: 50%;
+}
+
+.last-section-subSec-1 a{
+  text-decoration: none;
+  color: white;
+  padding: 0.7em 0;
+  background-color: black;
+  border-radius: 0.6em;
+  text-align: center;
+  font-size: 1.2em;
+  width: 30%;
+  border: 4px solid black;
+}
+
+
+.last-section-subSec-3 {
+  background-color: black;
+  display: flex;
+  padding: 4em 0;
+  border-radius: 3em;
+  margin-bottom: 7em;
+  margin-top: 4em;
+}
+
+.last-section-subSec-3 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 4em;
+  gap: 1em;
+}
+
+.last-section-subSec-3 #box-1,
+.last-section-subSec-3 #box-2 {
+  border-right: 2px solid white;
+}
+
+.last-section-subSec-3 p {
+  color: white;
+}
+
+.last-section-subSec-3 a {
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  text-decoration: none;
+  color: #b9ff66;
+} 
+
+.last-section-subSec-3 a i{
+  display: inline-block;
+  font-size: 1.7em;
+  transform: rotate(10deg);
+}
